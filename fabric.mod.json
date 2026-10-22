@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "freecam",
+	"version": "${version}",
+	"name": "Freecam",
+	"description": "Detach the camera from your player and fly around freely.",
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.example.freecam.FreecamClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "freecam.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
